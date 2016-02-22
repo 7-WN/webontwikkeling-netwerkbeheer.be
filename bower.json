@@ -1,0 +1,22 @@
+{
+  "name": "webontwikkeling-netwerkbeheer.be",
+  "authors": [
+    "Lars De Richter <lars@anansi.be>"
+  ],
+  "description": "Website voor ‘Webontwikkeling & Netwerkbeheer’",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "www.webontwikkeling-netwerkbeheer.be",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.1.1"
+  }
+}
