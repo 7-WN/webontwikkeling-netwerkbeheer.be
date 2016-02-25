@@ -1,5 +1,5 @@
 /* Change the standard fonts */
-html, body, p {
+html, body, p, ol, ul {
   font-size: 18px;
 }
 .mdl-layout{
@@ -8,7 +8,6 @@ html, body, p {
 .mdl-layout-title, .mdl-layout__title, h1, h2, h3, h4, h5, h6, h1 small, h2 small, h3 small, .mdl-navigation {
   font-family: "Ubuntu", serif;
 }
-
 /* Typography: font weights & sizes */
 .mdl-layout-title, .mdl-layout__title {
   font-size: 24px;
@@ -19,16 +18,30 @@ html, body, p {
 
 
 /* Block elements */
+body {
+  background: url(../images/square_bg.png) repeat;
+}
+
+/* Sections */
+.wn-container {
+  width: 100%;
+  margin-top: -22px; /* Otherwise shadow after 22px */
+  padding: 0;
+}
+h1 {
+  padding-top: 22px; /* Compensate for previous rule */
+}
+.wn-section--center {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+/* Adaptations of .mdl */
 .mdl-layout__header-row--higher {
   height: 96px;
 }
 .wn-layout .mdl-layout__header-row .mdl-navigation {
   padding-top: 32px;
-}
-
-.section--center {
-  max-width: 50em;
-  margin: 0 auto;
 }
 
 .wn-layout .mdl-layout__header--waterfall-hide-top{
@@ -38,10 +51,7 @@ html, body, p {
 .wn-layout .mdl-layout__header, .wn-layout .mdl-layout__drawer-button, .wn-layout .mdl-layout__header-row .mdl-navigation__link  {
   color: white;
 }
-.wn-card--full-width {
-  width: 100%;
-  margin: 0 8px;
-}
+
 /* Utility classes */
 .wn-floor-fade {
   background: linear-gradient(
@@ -49,10 +59,6 @@ html, body, p {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.85))
 }
-
-.compact {
+.wn-text--compact {
   line-height: .86em;
-}
-.align-right {
-  text-align: right;
 }
