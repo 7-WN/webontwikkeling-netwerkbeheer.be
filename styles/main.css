@@ -19,7 +19,7 @@ html, body, p, ol, ul {
 
 /* Block elements */
 body {
-  background: url(../images/square_bg.png) repeat;
+  background-color: #00BCD4;
 }
 
 /* Sections */
@@ -34,6 +34,22 @@ h1 {
 .wn-section--center {
   max-width: 50em;
   margin: 0 auto;
+}
+
+.wn-background-image {
+  position:relative;
+  z-index:-50000;
+  margin:0 auto;
+  padding:300px 0;
+  width:100%;
+  height:auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wn-background-image--vakken {
+  background-image: url(../images/vakken.jpg);
 }
 
 /* Adaptations of .mdl */
