@@ -38,6 +38,10 @@ html, body, p {
 .wn-layout .mdl-layout__header, .wn-layout .mdl-layout__drawer-button, .wn-layout .mdl-layout__header-row .mdl-navigation__link  {
   color: white;
 }
+.wn-card--full-width {
+  width: 100%;
+  margin: 0 8px;
+}
 /* Utility classes */
 .wn-floor-fade {
   background: linear-gradient(
