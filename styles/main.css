@@ -5,7 +5,7 @@ html, body, p, ol, ul {
 .mdl-layout{
   font-family: "Open Sans";
 }
-.mdl-layout-title, .mdl-layout__title, h1, h2, h3, h4, h5, h6, h1 small, h2 small, h3 small, .mdl-navigation {
+.mdl-layout-title, .mdl-layout__title, h1, h2, h3, h4, h5, h6, h1 small, h2 small, h3 small, .mdl-navigation, .mdl-button {
   font-family: "Ubuntu", serif;
 }
 /* Typography: font weights & sizes */
@@ -15,12 +15,25 @@ html, body, p, ol, ul {
 .mdl-navigation__link {
   font-weight: 500;
 }
+.mdl-button {
+  font-weight: 300;
+}
 
+/* Typography: text-colors */
+.mdl-color-text--white .mdl-card__subtitle-text {
+  color: rgba(255,255,255, 0.7)
+}
+
+/* Fix for mdl-card__subtitle-text */
+.mdl-card__title {
+  flex-direction: column;
+}
+.mdl-card__title-text, .mdl-card__subtitle-text {
+  align-self: flex-start;
+}
 
 /* Block elements */
-body {
-  background-color: #00BCD4;
-}
+
 
 /* Sections */
 .wn-container {
