@@ -40,7 +40,7 @@ html, body, p, ol, ul {
 .wn-container {
   width: 100%;
   margin-top: -22px; /* Otherwise shadow after 22px */
-  padding: 0;
+  padding: 0 0 32px 0;
 }
 h1 {
   padding-top: 22px; /* Compensate for previous rule */
