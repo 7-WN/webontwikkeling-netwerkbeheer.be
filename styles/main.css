@@ -35,7 +35,6 @@ html, body, p, ol, ul {
 
 /* Block elements */
 
-
 /* Sections */
 .wn-container {
   width: 100%;
@@ -76,6 +75,15 @@ h1 {
 
 .wn-layout .mdl-layout__header--waterfall-hide-top{
   background: url(../images/wn-header.jpg) center / cover;
+}
+
+.wn-action-card { /* Fixes problem where mdl-card--actions are not positioned correctly when displayed in a  */
+  padding-bottom: 44px;
+}
+
+.wn-action-card .mdl-card__actions {
+  position: absolute;
+  bottom: 0;
 }
 
 .wn-layout .mdl-layout__header, .wn-layout .mdl-layout__drawer-button, .wn-layout .mdl-layout__header-row .mdl-navigation__link  {
