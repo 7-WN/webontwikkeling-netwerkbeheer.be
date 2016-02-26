@@ -1,6 +1,7 @@
 /* Change the standard fonts */
 html, body, p, ol, ul {
   font-size: 18px;
+  line-height: 32px;
 }
 .mdl-layout{
   font-family: "Open Sans";
