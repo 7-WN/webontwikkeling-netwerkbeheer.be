@@ -64,6 +64,12 @@ h1 {
 .wn-background-image--vakken {
   background-image: url(../images/vakken.jpg);
 }
+.wn-background-image--uitstappen {
+  background-image: url(../images/science-museum.jpg);
+}
+.wn-background-image--toekomst {
+  background-image: url(../images/toekomst.jpg);
+}
 
 /* Adaptations of .mdl */
 .mdl-layout__header-row--higher {
