@@ -70,6 +70,9 @@ h1 {
 .wn-background-image--toekomst {
   background-image: url(../images/toekomst.jpg);
 }
+.wn-background-image--getuigenissen {
+  background-image: url(../images/getuigenissen.jpg);
+}
 
 /* Adaptations of .mdl */
 .mdl-layout__header-row--higher {
