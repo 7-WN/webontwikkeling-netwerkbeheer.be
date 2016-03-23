@@ -90,6 +90,11 @@ h1 {
   background: url(../images/wn-header.jpg) center / cover;
 }
 
+.wn-layout__title {
+  position: fixed;
+  top: 16px;
+}
+
 .wn-action-card { /* Fixes problem where mdl-card--actions are not positioned correctly when displayed in a  */
   padding-bottom: 44px;
 }
