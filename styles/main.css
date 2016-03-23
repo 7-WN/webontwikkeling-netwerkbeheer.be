@@ -74,6 +74,10 @@ h1 {
   background-image: url(../images/getuigenissen.jpg);
 }
 
+.wn-background-image--praktisch {
+  background-image: url(../images/praktisch.jpg);
+}
+
 /* Adaptations of .mdl */
 .mdl-layout__header-row--higher {
   height: 96px;
