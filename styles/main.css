@@ -22,6 +22,7 @@ html, body, p, ol, ul {
 
 /* Typography: text-colors */
 .mdl-color-text--white .mdl-card__subtitle-text {
+  color: white;
   color: rgba(255,255,255, 0.7)
 }
 
