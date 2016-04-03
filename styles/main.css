@@ -91,6 +91,9 @@ h1 {
 .mdl-layout__header-row--higher {
     height: 96px;
 }
+.mdl-card__supporting-text {
+    margin: 0 auto;
+}
 .wn-layout .mdl-layout__header-row .mdl-navigation {
     padding-top: 32px;
 }
