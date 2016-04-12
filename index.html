@@ -23,13 +23,13 @@
             <div class="mdl-layout__header-row mdl-layout__header-row--higher wn-floor-fade">
                 <div class="mdl-layout-spacer"></div>
                 <nav class="mdl-navigation">
-                    <a href="#start" class="mdl-navigation__link">Start</a>
-                    <a href="#vakken" class="mdl-navigation__link">Vakken</a>
-                    <a href="#uitstappen" class="mdl-navigation__link">Uitstappen</a>
-                    <a href="#toekomst" class="mdl-navigation__link">Toekomst</a>
-                    <a href="#getuigenissen" class="mdl-navigation__link">Getuigenissen</a>
-                    <a href="#praktisch" class="mdl-navigation__link">Praktisch</a>
-                    <a href="#contact" class="mdl-navigation__link">Contact</a>
+                    <a href="#start" class="mdl-navigation__link wn-navigation__link">Start</a>
+                    <a href="#vakken" class="mdl-navigation__link wn-navigation__link">Vakken</a>
+                    <a href="#uitstappen" class="mdl-navigation__link wn-navigation__link">Uitstappen</a>
+                    <a href="#toekomst" class="mdl-navigation__link wn-navigation__link">Toekomst</a>
+                    <a href="#getuigenissen" class="mdl-navigation__link wn-navigation__link">Getuigenissen</a>
+                    <a href="#praktisch" class="mdl-navigation__link wn-navigation__link">Praktisch</a>
+                    <a href="#contact" class="mdl-navigation__link wn-navigation__link">Contact</a>
                 </nav>
             </div>
         </header>
@@ -703,6 +703,27 @@
         </div>
     </div>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script>
+        /**
+         *  Autoscroll to correct section when navbar button is clicked
+         */
+        // first get the top position of each section at load time and put them in a hash
+        // with the hrefs as keys
+        var container_positions = {};
+        $(".wn-container").each(function(index, container) {
+            container_positions["#" + $(container).attr("id")] = $(container).position().top;
+        });
+
+        // create the click events
+        $(".mdl-navigation__link").click(function() {
+            var top = container_positions[$.attr(this, 'href')]; // get the correct top position out of the hash
+            $('.mdl-layout__content').animate({
+                scrollTop: top
+            }, 2000, "swing", console.log(top));
+            return false;
+        });
+    </script>
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
