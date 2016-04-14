@@ -14,100 +14,100 @@ h1, h2, h3, h4, h5, h6 {
 * Colors
 */
 
-.color-1-light {
+.wn-color-1-light {
     background-color: #3aeff3;
 }
-.color-1 {
+.wn-color-1 {
     background-color: #0bb8bc;
 }
-.color-1-dark {
+.wn-color-1-dark {
     background-color: #066568;
 }
-.black-1 {
+.wn-black-1 {
     background-color: #011213;
 }
-.darkgrey-1 {
+.wn-darkgrey-1 {
     background-color: #637272;
 }
-.lightgrey-1 {
+.wn-lightgrey-1 {
     background-color: #afb9b9;
 }
-.white-1 {
+.wn-white-1 {
     background-color: #e7f8f8;
 }
-.coloraccent-1 {
+.wn-coloraccent-1 {
     background-color: #e8560e;
 }
-.color-2-light {
+.wn-color-2-light {
     background-color: #3b8cf3;
 }
-.color-2 {
+.wn-color-2 {
     background-color: #0b59bd;
 }
-.color-2-dark {
+.wn-color-2-dark {
     background-color: #063168;
 }
-.black-2 {
+.wn-black-2 {
     background-color: #010913;
 }
-.darkgrey-2 {
+.wn-darkgrey-2 {
     background-color: #636a72;
 }
-.lightgrey-2 {
+.wn-lightgrey-2 {
     background-color: #afb4b9;
 }
-.white-2 {
+.wn-white-2 {
     background-color: #e7eef8;
 }
-.coloraccent-2 {
+.wn-coloraccent-2 {
     background-color: #ff9e00;
 }
-.text-color-1-light {
+.wn-text-color-1-light {
     color: #3aeff3;
 }
-.text-color-1 {
+.wn-text-color-1 {
     color: #0bb8bc;
 }
-.text-color-1-dark {
+.wn-text-color-1-dark {
     color: #066568;
 }
-.text-black-1 {
+.wn-text-black-1 {
     color: #011213;
 }
-.text-darkgrey-1 {
+.wn-text-darkgrey-1 {
     color: #637272;
 }
-.text-lightgrey-1 {
+.wn-text-lightgrey-1 {
     color: #afb9b9;
 }
-.text-white-1 {
+.wn-text-white-1 {
     color: #e7f8f8;
 }
-.text-coloraccent-1 {
+.wn-text-coloraccent-1 {
     color: #e8560e;
 }
-.text-color-2-light {
+.wn-text-color-2-light {
     color: #3b8cf3;
 }
-.text-color-2 {
+.wn-text-color-2 {
     color: #0b59bd;
 }
-.text-color-2-dark {
+.wn-text-color-2-dark {
     color: #063168;
 }
-.text-black-2 {
+.wn-text-black-2 {
     color: #010913;
 }
-.text-darkgrey-2 {
+.wn-text-darkgrey-2 {
     color: #636a72;
 }
-.text-lightgrey-2 {
+.wn-text-lightgrey-2 {
     color: #afb4b9;
 }
-.text-white-2 {
+.wn-text-white-2 {
     color: #e7eef8;
 }
-.text-coloraccent-2 {
+.wn-text-coloraccent-2 {
     color: #ff9e00;
 }
 
@@ -116,12 +116,28 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 .wn-header {
+    position: fixed;
+    width: 100%;
     height: 10rem;
     background: url("../images/wn-header.jpg") center / cover;
+    top: 0;
+    transition-duration: 0.2s;
+    transition-property: height;
+}
+.wn-header--collapsed {
+    height: 6rem;
 }
 .wn-header__title {
-    margin-top: -2rem;
-    padding: 3rem 0 0 2rem;
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    padding: 2rem 0 0 2rem;
+    margin: 0;
+}
+
+/**
+* Helpers
+*/
+
+.wn-floor-fade {
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85));
 }
