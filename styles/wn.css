@@ -3,11 +3,11 @@
 */
 
 html {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Ubuntu", serif;
+    font-family: 'Ubuntu', serif;
 }
 
 /**
@@ -115,14 +115,17 @@ h1, h2, h3, h4, h5, h6 {
 * Layout Blocks
 */
 
+
+/* Header */
+
 .wn-header {
     position: fixed;
+    top: 0;
     width: 100%;
     height: 10rem;
-    background: url("../images/wn-header.jpg") center / cover;
-    top: 0;
-    transition-duration: 0.2s;
+    transition-duration: .2s;
     transition-property: height;
+    background: url('../images/wn-header.jpg') center / cover;
 }
 .wn-header--collapsed {
     height: 6rem;
@@ -130,8 +133,22 @@ h1, h2, h3, h4, h5, h6 {
 .wn-header__title {
     font-size: 1.5rem;
     line-height: 2rem;
-    padding: 2rem 0 0 2rem;
     margin: 0;
+    padding: 2rem 0 0 2rem;
+}
+
+/* Navbar */
+
+nav {
+    margin-top: 44px;
+    padding-right: 2rem;
+    transition-duration: .2s;
+    transition-property: margin-top;
+    background-color: inherit;
+    box-shadow: none;
+}
+.wn-header--collapsed nav {
+    margin-top: -28px;
 }
 
 /**
@@ -139,5 +156,5 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 .wn-floor-fade {
-    background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85));
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .85));
 }
