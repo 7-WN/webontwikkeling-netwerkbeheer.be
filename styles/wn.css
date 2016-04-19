@@ -196,10 +196,17 @@ main {
 
 .row {
     max-width: 52rem;
+    display: flex;
+}
+.col {
+    display: flex;
 }
 
 /* Card */
 
+.card {
+    width: 100%;
+}
 .card .card-content {
     padding: 1rem;
     opacity: 0.66;
