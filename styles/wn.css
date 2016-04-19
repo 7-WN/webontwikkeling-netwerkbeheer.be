@@ -156,6 +156,7 @@ body {
 }
 .row {
     margin-bottom: 0;
+    max-width: 52rem;
 }
 
 /* Header */
@@ -230,16 +231,6 @@ section {
 }
 .wn-background--vakken {
     background-image: url("../images/vakken.jpg");
-}
-
-/* Row */
-
-.row {
-    display: flex;
-    max-width: 52rem;
-}
-.col {
-    display: flex;
 }
 
 /* Card */

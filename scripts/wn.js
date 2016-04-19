@@ -1,4 +1,11 @@
 /**
+ * Making the cards of equal height
+ */
+
+$(".card").matchHeight();
+
+
+/**
  * Resizing of the page header
  **/
 $(window).scroll(function() {
