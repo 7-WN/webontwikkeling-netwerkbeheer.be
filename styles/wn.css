@@ -197,6 +197,29 @@ main {
     margin-top: 6rem;
 }
 
+/* section */
+
+section {
+    padding-bottom: 2rem;
+}
+
+/* wn-background */
+
+.wn-background {
+    position: relative;
+    z-index: -1000;
+    width: 100%;
+    margin: 0;
+    padding: 16rem 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.wn-background--vakken {
+    background-image: url("../images/vakken.jpg");
+}
+
 /* Row */
 
 .row {
