@@ -12,10 +12,10 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', serif;
+    margin: 0;
 }
 h2 {
     font-size: 3rem;
-    margin: 0 0 1rem 0;
     padding-top: 1.25rem;
     text-align: center;
 }
@@ -23,6 +23,14 @@ h2 small {
     font-size: 1.75rem;
     line-height: 1.5rem;
     display: block;
+    opacity: .54;
+}
+h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+h3 small {
+    font-size: 1.5rem;
     opacity: .54;
 }
 
@@ -67,13 +75,13 @@ h2 small {
     background-color: #e8560e;
 }
 .wn-color-2-light {
-    background-color: #3b8cf3;
+    background-color: #83b6f7;
 }
 .wn-color-2 {
-    background-color: #0b59bd;
+    background-color: #3b8cf3;
 }
 .wn-color-2-dark {
-    background-color: #063168;
+    background-color: #0a4ea5;
 }
 .wn-black-2 {
     background-color: #010913;
@@ -171,6 +179,10 @@ body {
     margin: 0;
     padding: 2rem 0 0 2rem;
 }
+.wn-header__title small {
+    font-size: 1rem;
+    opacity: .70;
+}
 
 /* Navbar */
 
@@ -234,6 +246,7 @@ section {
 
 .card {
     width: 100%;
+    margin-top: 1rem;
 }
 .card .card-content {
     padding: 1rem;
