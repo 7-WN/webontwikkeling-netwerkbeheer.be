@@ -238,6 +238,9 @@ section {
 .wn-background--vakken {
     background-image: url('../images/vakken.jpg');
 }
+.wn-background--uitstappen {
+    background-image: url('../images/science-museum.jpg')
+}
 
 /* Card */
 
