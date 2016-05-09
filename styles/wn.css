@@ -22,6 +22,19 @@ h3 small {
     font-size: 1.5rem;
     opacity: .54;
 }
+hr {
+    margin: 1.62rem 0;
+}
+.wn-link-list {
+    list-style: none;
+    padding-bottom: 1.62rem;
+}
+.wn-link-list li, .wn-link-list a {
+    vertical-align: top;
+}
+.material-icons {
+    font-size: 1.62rem;
+}
 
 /**
 * Lists
@@ -240,6 +253,9 @@ section {
 }
 .wn-background--uitstappen {
     background-image: url('../images/science-museum.jpg')
+}
+.wn-background--toekomst {
+    background-image: url('../images/toekomst.jpg');
 }
 
 /* Card */
