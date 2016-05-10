@@ -10,8 +10,9 @@ body {
     font-size: 1rem;
     line-height: 1.62rem;
 }
-p {
-    margin-bottom: 1.62rem;
+p, .collapsible-body p {
+    margin: 0 0 1.62rem 0;
+    padding: 0;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', serif;
@@ -37,7 +38,15 @@ hr {
 }
 .material-icons {
     font-size: 1.62rem;
-    vertical-align: top;
+    line-height: 1.62rem;
+}
+.wn-card-header .material-icons {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+blockquote {
+    border-left: 6px solid #636a72;
+    margin: 0 3.24rem 1.62rem 3.24rem;
 }
 
 /**
@@ -198,7 +207,7 @@ body {
 
 nav {
     margin-top: 44px;
-    padding-right: 2rem;
+    padding-right: 3.24rem;
     transition-duration: .2s;
     transition-property: margin-top;
     background-color: inherit;
@@ -222,13 +231,13 @@ main {
 /* page */
 
 .wn-page-title {
-    font-size: 3rem;
-    padding: 1.25rem 0 1rem 0;
+    font-size: 3.24rem;
+    padding: 1.62rem 0;
     text-align: center;
 }
 .wn-page-title small {
     font-size: 1.75rem;
-    line-height: 1.5rem;
+    line-height: 1.62rem;
     display: block;
     opacity: .54;
 }
@@ -236,7 +245,7 @@ main {
 /* section */
 
 section {
-    padding: 1rem 0 2rem 0;
+    padding: 1.62rem 0 3.24rem 0;
 }
 
 /* wn-background */
@@ -246,7 +255,7 @@ section {
     z-index: -1000;
     width: 100%;
     margin: 0;
-    padding: 16rem 0;
+    padding: 16.2rem 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -264,6 +273,9 @@ section {
 .wn-background--getuigenissen {
     background-image: url('../images/getuigenissen.jpg');
 }
+.wn-background--praktisch {
+    background-image: url('../images/praktisch.jpg');
+}
 
 /* Card */
 
@@ -272,7 +284,7 @@ section {
     margin-top: 0.667rem;
 }
 .card .card-content {
-    padding: 1rem;
+    padding: 1.62rem;
     opacity: .66;
 }
 .card .card-content p {
@@ -300,8 +312,26 @@ section {
     font-weight: 300;
     line-height: 2rem;
     margin: 0;
-    padding: .5rem 1rem;
+    padding: .667rem 1.62rem;
     vertical-align: middle;
+}
+
+/* Collapsible */
+
+.collapsible {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: .81rem 0;
+}
+.collapsible-header {
+    min-height: inherit;
+    line-height: inherit;
+    padding: inherit;
+    border-bottom: 1px solid #e7eef8;
+}
+.collapsible .collapsible-body {
+    padding: 1rem;
 }
 
 /**
