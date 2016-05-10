@@ -276,6 +276,9 @@ section {
 .wn-background--praktisch {
     background-image: url('../images/praktisch.jpg');
 }
+.wn-background--contact {
+    background-image: url('../images/contact.jpg');
+}
 
 /* Card */
 
