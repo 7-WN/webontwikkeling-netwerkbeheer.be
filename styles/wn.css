@@ -10,6 +10,9 @@ body {
     font-size: 1rem;
     line-height: 1.62rem;
 }
+p {
+    margin-bottom: 1.62rem;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', serif;
     margin: 0;
@@ -23,7 +26,7 @@ h3 small {
     opacity: .54;
 }
 hr {
-    margin: 1.62rem 0, ju!;
+    margin: 1.62rem 0;
 }
 .wn-link-list {
     list-style: none;
@@ -267,6 +270,9 @@ section {
 .card .card-content {
     padding: 1rem;
     opacity: .66;
+}
+.card .card-content p {
+    margin-bottom: 1.62rem;
 }
 .wn-card-header {
     border-top-left-radius: 2px;
