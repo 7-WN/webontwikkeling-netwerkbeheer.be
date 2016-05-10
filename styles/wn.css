@@ -54,7 +54,7 @@ blockquote {
 */
 
 .wn-plain-list {
-    margin: 0 2rem;
+    margin: 0 0 1.62rem 3.24rem;
 }
 .wn-plain-list li {
     list-style: disc;
@@ -322,7 +322,7 @@ section {
     border-top: none;
     border-left: none;
     border-right: none;
-    margin: .81rem 0;
+    margin: 1.62rem 0;
 }
 .collapsible-header {
     min-height: inherit;
@@ -330,8 +330,11 @@ section {
     padding: inherit;
     border-bottom: 1px solid #e7eef8;
 }
+.collapsible>li:last-child .collapsible-header {
+    border-bottom: none;
+}
 .collapsible .collapsible-body {
-    padding: 1rem;
+    padding: 1.62rem;
 }
 
 /**
