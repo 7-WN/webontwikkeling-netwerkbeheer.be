@@ -32,11 +32,12 @@ hr {
     list-style: none;
     padding-bottom: 1.62rem;
 }
-.wn-link-list li, .wn-link-list a {
-    vertical-align: top;
+.wn-link-list li {
+    margin-bottom: .81rem;
 }
 .material-icons {
     font-size: 1.62rem;
+    vertical-align: top;
 }
 
 /**
@@ -237,6 +238,9 @@ main {
 section {
     padding: 1rem 0 2rem 0;
 }
+.wn-section__title {
+    margin-bottom: 1.62rem;
+}
 
 /* wn-background */
 
@@ -260,12 +264,15 @@ section {
 .wn-background--toekomst {
     background-image: url('../images/toekomst.jpg');
 }
+.wn-background--getuigenissen {
+    background-image: url('../images/getuigenissen.jpg');
+}
 
 /* Card */
 
 .card {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 0.667rem;
 }
 .card .card-content {
     padding: 1rem;
@@ -274,9 +281,22 @@ section {
 .card .card-content p {
     margin-bottom: 1.62rem;
 }
+.wn-card--has-footer {
+    margin-bottom: 2.287rem;
+}
 .wn-card-header {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
+}
+.wn-card-footer {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    position: absolute;
+    width: 100%;
+    bottom: -1.62rem;
+}
+.wn-card-footer .btn-flat {
+    margin: .81rem 0;
 }
 .wn-card-header h3, .wn-card-header h4 {
     font-size: 1.5rem;
