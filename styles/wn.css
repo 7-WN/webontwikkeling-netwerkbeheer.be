@@ -244,9 +244,11 @@ main {
 
 /* section */
 
-section {
+.wn-section {
     padding: 1.62rem 0 3.24rem 0;
 }
+.wn-section__title {}
+.wn-section__subtitle {}
 
 /* wn-background */
 
@@ -310,7 +312,7 @@ section {
 .wn-card-footer .btn-flat {
     margin: .81rem 0;
 }
-.wn-card-header h3, .wn-card-header h4 {
+.wn-card-header__title {
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 2rem;
