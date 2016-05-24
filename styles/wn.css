@@ -63,6 +63,18 @@ blockquote {
 }
 
 /**
+* Collection list
+*/
+
+.collection, .collection-item, .collection .collection-item {
+    border: none;
+    background-color: inherit;
+}
+.avatar .material-icons {
+    padding-right: 1rem;
+}
+
+/**
 * Colors
 */
 
