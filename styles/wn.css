@@ -35,10 +35,12 @@ hr {
 .material-icons {
     font-size: 1.62rem;
     line-height: 1.62rem;
+    vertical-align: top;
 }
-.wn-card-header .material-icons {
+.wn-card-header .material-icons, .wn-card-footer .material-icons {
     font-size: 2rem;
     line-height: 2rem;
+    vertical-align: top;
 }
 blockquote {
     border-left: 6px solid #afb9b9;
