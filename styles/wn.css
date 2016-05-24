@@ -235,8 +235,8 @@ main {
     text-align: center;
 }
 .wn-page-title small {
-    font-size: 1.75rem;
-    line-height: 1.62rem;
+    font-size: 1.62rem;
+    line-height: 3.24rem;
     display: block;
     opacity: .75;
 }
@@ -249,10 +249,12 @@ main {
 .wn-section__title {
     font-size: 2rem;
     line-height: 3.24rem;
+    padding-left: 2px;
 }
 .wn-section__subtitle {
     font-size: 1.62rem;
     line-height: 3.24rem;
+    padding-left: 2px;
 }
 
 /* wn-background */
