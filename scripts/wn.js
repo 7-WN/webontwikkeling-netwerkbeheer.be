@@ -27,6 +27,12 @@ $(".wn-nav-link").click(function() {
 });
 
 /**
+ * Navigation Scrollspy
+ */
+$('.scrollspy').scrollSpy();
+
+
+/**
  * Toast message
  */
-Materialize.toast('kom naar ons infomoment op 30 juni van 13.00 tot 16.00', 5000, "wn-info-toast");
+Materialize.toast('Kom naar ons infomoment op 30 juni van 13.00 tot 16.00', 5000, "wn-info-toast");
