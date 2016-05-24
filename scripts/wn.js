@@ -25,3 +25,8 @@ $(".wn-nav-link").click(function() {
     }, 2000);
     return false;
 });
+
+/**
+ * Toast message
+ */
+Materialize.toast('kom naar ons infomoment op 30 juni van 13.00 tot 16.00', 5000, "wn-info-toast");

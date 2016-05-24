@@ -365,6 +365,19 @@ main {
 }
 
 /**
+* Toast
+*/
+
+.wn-info-toast {
+    background-color: #e7f8f8;
+    color: #011213;
+    opacity: .75;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+/**
 * Helpers
 */
 
