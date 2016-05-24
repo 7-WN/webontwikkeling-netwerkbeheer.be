@@ -19,6 +19,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 200;
     margin: 0;
 }
+small {
+    opacity: .75;
+}
 hr {
     margin: 1.62rem 0;
 }
@@ -163,8 +166,9 @@ body {
     margin: 0;
 }
 .row {
-    max-width: 56rem;
-    margin-bottom: 0;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 3.24rem;
 }
 .wn-heading-row {
     margin-top: 1rem;
