@@ -29,8 +29,8 @@ hr {
     margin: 1.62rem 0;
 }
 .wn-link-list {
-    list-style: none;
     padding-bottom: 1.62rem;
+    list-style: none;
 }
 .wn-link-list li {
     margin-bottom: .81rem;
@@ -46,8 +46,8 @@ hr {
     vertical-align: top;
 }
 blockquote {
-    border-left: 6px solid #afb9b9;
     margin: 0 3.24rem 1.62rem 3.24rem;
+    border-left: 6px solid #afb9b9;
 }
 
 /**
@@ -208,8 +208,8 @@ body {
 }
 .wn-header__title {
     font-size: 1.62rem;
-    line-height: 2rem;
     font-weight: 200;
+    line-height: 2rem;
     margin: 0;
     padding: 2rem 0 0 2rem;
 }
@@ -217,25 +217,25 @@ body {
 /* Navbar */
 
 nav {
+    font-family: Ubuntu;
+    font-weight: 200;
     margin-top: 44px;
     padding-right: 3.24rem;
     transition-duration: .2s;
     transition-property: margin-top;
     background-color: inherit;
     box-shadow: none;
-    font-family: Ubuntu;
-    font-weight: 200;
 }
 nav ul a:hover {
     background-color: rgb(11, 184, 188);
-    background-color: rgba(11, 184, 188, 0.5);
+    background-color: rgba(11, 184, 188, .5);
 }
 .wn-header--collapsed nav {
     margin-top: -28px;
 }
 nav ul a {
-    transition-property: border-bottom;
     transition-duration: .2s;
+    transition-property: border-bottom;
 }
 nav ul a.active {
     line-height: 60px;
@@ -301,7 +301,7 @@ main {
     background-image: url('../images/vakken.jpg');
 }
 .wn-background--uitstappen {
-    background-image: url('../images/science-museum.jpg')
+    background-image: url('../images/science-museum.jpg');
 }
 .wn-background--toekomst {
     background-image: url('../images/toekomst.jpg');
@@ -320,7 +320,7 @@ main {
 
 .card {
     width: 100%;
-    margin-top: 0.667rem;
+    margin-top: .667rem;
 }
 .card .card-content {
     padding: 1.62rem;
@@ -337,11 +337,11 @@ main {
     border-top-right-radius: 2px;
 }
 .wn-card-footer {
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
     position: absolute;
-    width: 100%;
     bottom: -1.62rem;
+    width: 100%;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
 .wn-card-footer .btn-flat {
     margin: .81rem 0;
@@ -358,18 +358,18 @@ main {
 /* Collapsible */
 
 .collapsible {
-    border-top: none;
-    border-left: none;
-    border-right: none;
     margin: 1.62rem 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
 }
 .collapsible-header {
-    min-height: inherit;
     line-height: inherit;
+    min-height: inherit;
     padding: inherit;
     border-bottom: 1px solid #e7eef8;
 }
-.collapsible>li:last-child .collapsible-header {
+.collapsible > li:last-child .collapsible-header {
     border-bottom: none;
 }
 .collapsible .collapsible-body {
@@ -381,16 +381,17 @@ main {
 */
 
 .wn-info-toast {
-    background-color: rgba(231, 248, 248, .75);
-    color: #011213;
-    opacity: .75;
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.62rem;
     position: fixed;
     top: 1rem;
     right: 1rem;
-    font-family: Ubuntu;
-    font-size: 1rem;
-    line-height: 1.62rem;
-    font-weight: 200;
+    opacity: .75;
+    color: #011213;
+    background-color: rgb(231, 248, 248);
+    background-color: rgba(231, 248, 248, .75);
 }
 
 /**
