@@ -35,4 +35,4 @@ $('.scrollspy').scrollSpy();
 /**
  * Toast message
  */
-Materialize.toast('Kom naar ons infomoment op 7 mei van 17.00 tot 20.00', 5000, "wn-info-toast");
+Materialize.toast('Kom naar ons infomoment op 29 juni van 13.00 tot 16.00', 5000, "wn-info-toast");
