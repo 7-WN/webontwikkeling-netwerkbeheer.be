@@ -43,7 +43,7 @@ $(".scrollspy").scrollSpy();
  * Toast message
  */
 Materialize.toast(
-  "Er is nog plaats! Je kan nog zeker de hele maand september mee inschuiven.",
+  "Infomomenten: 29 april (17.00–20.00u) en 28 juni (13.00–16.00u)",
   5000,
   "wn-info-toast"
 );
