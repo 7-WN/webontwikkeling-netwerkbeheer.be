@@ -1,5 +1,41 @@
 html {
+  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
+  line-height: 1.5;
+}
+@media (max-width: 520px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 460px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media (max-width: 300px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Code Pro", "Courier New", Courier, monospace;
 }
 
 .intro {
@@ -8,12 +44,14 @@ html {
   justify-content: center;
   min-height: 100vh;
   width: 100vw;
+  max-width: 100%; /* when vertical scrollbar appears, we get horizontal scrollbar because our base vw is changed */
   background-color: black;
   color: white;
 }
 .intro__content {
   max-width: 67%;
   font-family: "Source Code Pro", "Courier New", Courier, monospace;
+  line-height: 1.2;
 }
 
 .intro__text {
@@ -40,8 +78,56 @@ html {
 
 .intro__nav-button {
   display: block;
-  margin-top: 5rem;
+  margin: 5rem 0;
   font-size: 5rem;
   text-align: center;
   color: white;
+}
+.page-header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: black;
+  color: white;
+}
+.page {
+  position: relative;
+}
+.main-menu {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-family: "Source Code Pro", "Courier New", Courier, monospace;
+}
+.main-menu__item {
+  display: inline-block;
+  list-style: none;
+  padding: 0.5em 1em;
+}
+
+.main-menu__link {
+  text-decoration: none;
+  color: white;
+}
+
+.main-menu__link:hover {
+  font-weight: 300;
+  color: silver;
+}
+.page-title {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 400;
+}
+.page-title small {
+  font-size: 2rem;
+}
+.page-section {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
