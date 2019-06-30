@@ -172,7 +172,7 @@ b {
   padding-top: 0;
 }
 
-.page-section:nth-child(2n + 1) {
+.page-section:nth-child(odd) {
   background-color: black;
   color: white;
 }
@@ -181,6 +181,20 @@ b {
   max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.page-section__title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.page-section__subtitle {
+  margin-top: 0;
+  margin-bottom: 0.67rem;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 /**
@@ -201,4 +215,15 @@ b {
 .card:last-child,
 .card:nth-child(3n) {
   margin-right: 0;
+}
+
+.card__title {
+  margin: 0.5rem 0;
+  font-size: 1.33rem;
+  line-height: 1;
+}
+
+.card__title small {
+  font-size: 1rem;
+  color: grey;
 }
