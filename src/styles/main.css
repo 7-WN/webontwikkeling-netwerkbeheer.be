@@ -39,6 +39,7 @@ h4,
 h5,
 h6 {
   font-family: "Source Code Pro", "Courier New", Courier, monospace;
+  font-weight: 400;
 }
 strong,
 b {
@@ -180,4 +181,24 @@ b {
   max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+/**
+*  Cards
+*/
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  box-sizing: border-box;
+  flex: 1 1 25%; /* max 3 per row: 25% + 1rem from thge margin has the right result calc doesn’t seem to work here */
+  padding: 0 1rem;
+  margin: 1rem 1rem 0 0;
+  border: 1px solid white;
+}
+.card:last-child,
+.card:nth-child(3n) {
+  margin-right: 0;
 }
