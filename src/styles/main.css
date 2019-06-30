@@ -204,6 +204,7 @@ b {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 .card {
   box-sizing: border-box;
