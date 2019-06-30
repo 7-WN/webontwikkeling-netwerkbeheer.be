@@ -1,3 +1,6 @@
+/**
+*  General typography and basic resizing for responsiveness
+*/
 html {
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
@@ -41,7 +44,15 @@ strong,
 b {
   font-weight: 600;
 }
+.--extra-strong {
+  font-size: 1.33em;
+  font-weight: 600;
+  font-style: italic;
+}
 
+/**
+*  Intro screen styling
+*/
 .intro {
   display: flex;
   align-items: center;
@@ -52,6 +63,7 @@ b {
   background-color: black;
   color: white;
 }
+
 .intro__content {
   max-width: 67%;
   font-family: "Source Code Pro", "Courier New", Courier, monospace;
@@ -87,6 +99,17 @@ b {
   text-align: center;
   color: white;
 }
+
+/**
+*  Page styling
+*/
+.page {
+  position: relative;
+}
+
+/**
+*  Navbar and menu
+*/
 .page-header {
   position: sticky;
   position: -webkit-sticky;
@@ -95,16 +118,16 @@ b {
   background-color: black;
   color: white;
 }
-.page {
-  position: relative;
-}
+
 .main-menu {
   overflow: hidden; /* to create a new block formatting context */
   margin: 0;
   padding: 0;
   text-align: right;
   font-family: "Source Code Pro", "Courier New", Courier, monospace;
+  font-size: 1.33em;
 }
+
 .main-menu__item {
   display: inline-block;
   list-style: none;
@@ -120,6 +143,10 @@ b {
   font-weight: 300;
   color: silver;
 }
+
+/**
+*  Main title for the page
+*/
 .page-title {
   max-width: 50rem;
   margin: 2rem auto;
@@ -128,17 +155,29 @@ b {
   line-height: 1;
   font-weight: 400;
 }
+
 .page-title small {
   font-size: 2rem;
 }
+
+/**
+*  Page sections
+*/
 .page-section {
-  max-width: 50rem;
-  margin: 0 auto;
-  padding: 0 2rem;
+  padding: 2rem 0;
 }
 
-.--extra-strong {
-  font-size: 1.33em;
-  font-weight: 600;
-  font-style: italic;
+.page-section:first-of-type {
+  padding-top: 0;
+}
+
+.page-section:nth-child(2n + 1) {
+  background-color: black;
+  color: white;
+}
+
+.page-section > * {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
 }
