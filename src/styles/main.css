@@ -37,6 +37,10 @@ h5,
 h6 {
   font-family: "Source Code Pro", "Courier New", Courier, monospace;
 }
+strong,
+b {
+  font-weight: 600;
+}
 
 .intro {
   display: flex;
@@ -95,6 +99,7 @@ h6 {
   position: relative;
 }
 .main-menu {
+  overflow: hidden; /* to create a new block formatting context */
   margin: 0;
   padding: 0;
   text-align: right;
@@ -130,4 +135,10 @@ h6 {
   max-width: 50rem;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+.--extra-strong {
+  font-size: 1.33em;
+  font-weight: 600;
+  font-style: italic;
 }
