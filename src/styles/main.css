@@ -210,8 +210,16 @@ b {
   flex: 1 1 25%; /* max 3 per row: 25% + 1rem from the margin has the correct result calc doesn’t seem to work here */
   padding: 0 1rem;
   margin: 1rem 1rem 0 0;
+}
+
+.page-section:nth-child(odd) .card {
   border: 1px solid white;
 }
+
+.page-section:nth-child(even) .card {
+  border: 1px solid black;
+}
+
 .card:last-child,
 .card:nth-child(3n) {
   margin-right: 0;
