@@ -55,12 +55,14 @@ b {
 *  Intro screen styling
 */
 .intro {
+  box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 100vh;
-  width: 100vw;
-  max-width: 100%; /* when vertical scrollbar appears, we get horizontal scrollbar because our base vw is changed */
+  width: 100%;
+  border-bottom: 1px solid grey;
   background-color: black;
   color: white;
 }
@@ -90,10 +92,13 @@ b {
 
 .intro__nav-button {
   display: block;
-  margin: 5rem 0;
   font-size: 5rem;
-  text-align: center;
   color: white;
+}
+
+.intro__nav-button-spacer {
+  display: block;
+  font-size: 5rem;
 }
 
 /**
