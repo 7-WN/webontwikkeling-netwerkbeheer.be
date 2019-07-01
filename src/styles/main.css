@@ -213,6 +213,10 @@ b {
   margin: 1rem 1rem 0 0;
 }
 
+.card--2 {
+  flex: 1 1 35%; /* max 2 per row: 35% + 1rem from the margin has the correct result calc doesn’t seem to work here */
+}
+
 .page-section:nth-child(odd) .card {
   border: 1px solid white;
 }
