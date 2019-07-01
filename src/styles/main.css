@@ -72,17 +72,12 @@ b {
 }
 
 .intro__text {
-  margin: 0 1rem 0 0;
-  font-size: 2rem;
+  margin: 1.5rem 0;
+  font-size: 3rem;
   font-weight: 300;
 }
 
 .intro__text--large {
-  margin-bottom: 1.5rem;
-  font-size: 3rem;
-}
-
-.intro__text--xlarge {
   margin-bottom: 2rem;
   font-size: 9rem;
   font-weight: 900;
