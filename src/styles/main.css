@@ -230,6 +230,14 @@ b {
   margin-right: 0;
 }
 
+.card--2:nth-child(3n) {
+  margin-right: 1rem; /* reset margin-right for card--2 */
+}
+
+.card--2:nth-child(even) {
+  margin-right: 0; /* and unset it for every second card--2 */
+}
+
 .card__title {
   margin: 0.5rem 0;
   font-size: 1.33rem;
