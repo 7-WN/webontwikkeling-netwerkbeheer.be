@@ -129,6 +129,35 @@ b {
   font-size: 1.33em;
 }
 
+@media (max-width: 1533px) {
+  .main-menu {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1383px) {
+  .main-menu {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1152px) {
+  .main-menu {
+    font-size: 0.9rem;
+  }
+}
+
+/* TODO: @media (max-width: 1038px) hamburger menu */
+
+.main-menu__title {
+  float: left;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 300;
+  padding: 0.5em 1em;
+}
+
 .main-menu__item {
   display: inline-block;
   list-style: none;
