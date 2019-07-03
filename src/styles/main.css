@@ -254,7 +254,6 @@ b {
   border: 1px solid black;
 }
 
-.card:last-child,
 .card:nth-child(3n) {
   margin-right: 0;
 }
@@ -263,6 +262,7 @@ b {
   margin-right: 1rem; /* reset margin-right for card--2 */
 }
 
+.card:last-child,
 .card--2:nth-child(even) {
   margin-right: 0; /* and unset it for every second card--2 */
 }
